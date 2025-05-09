@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeFinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RecipeFinder</h1>
+        <p>Find and Share Your Favorite Recipes!</p>
+    </header>
+
+    <div class="container">
+        <!-- Add Recipe Section -->
+        <section id="add-recipe-section">
+            <h2>Add a Recipe</h2>
+            <form id="add-recipe-form">
+                <input type="text" id="recipe-title" placeholder="Recipe Title" required>
+                <textarea id="recipe-description" placeholder="Recipe Description" required></textarea>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+
+        <!-- Search Recipes Section -->
+        <section id="search-recipe-section">
+            <h2>Search for Recipes</h2>
+            <input type="text" id="search-query" placeholder="Search by recipe name">
+            <button onclick="searchRecipes()">Search</button>
+
+            <div id="results"></div>
+        </section>
+        <!-- Add this below the search section -->
+<section id="view-all-recipes-section">
+    <h2>View All Recipes</h2>
+    <button onclick="viewAllRecipes()">Show All Recipes</button>
+    <div id="all-recipes-results"></div>
+</section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
